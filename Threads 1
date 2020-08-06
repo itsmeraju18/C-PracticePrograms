@@ -1,0 +1,15 @@
+// Static method 
+    static void mythread() 
+    { 
+  
+        // Display the name of the  
+        // current working thread 
+        Console.WriteLine("In progress thread is: {0}", 
+                            Thread.CurrentThread.Name); 
+  
+        Thread.Sleep(2000); 
+  
+        Console.WriteLine("Completed thread is: {0}", 
+                          Thread.CurrentThread.Name);
+                          }
+                          }
