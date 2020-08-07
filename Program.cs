@@ -1,12 +1,25 @@
-﻿using System;
+﻿//C#: Exception Handling: Handling all exceptions
+using System;
 
-namespace Exception_handling
+namespace Catch_exception
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+             int x = 0;
+            int div = 0;
+            try
+            {
+                div = 100 / x;
+                Console.WriteLine("Not executed line");
+            }
+            catch
+            {
+                Console.WriteLine("oException");
+            }
+            Console.WriteLine($"Result is {div}");
+            
         }
     }
 }
